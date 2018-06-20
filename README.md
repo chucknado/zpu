@@ -4,6 +4,11 @@
 This tool batch-publishes transformed DITA files to Help Center.
 
 
+### Limitation
+
+The tool updates existing articles on Help Center -- that is, articles with known Help Center ids. To publish new articles, the tool must be modified to specify the target section of each article, as well as use the `post_resource()` helper instead of `put_resource()` (see **api.py**). For more information, see [Create Article](https://developer.zendesk.com/rest_api/docs/help_center/articles#create-article) in the Help Center API docs.
+
+
 ### Requirements
 
 - Python 3.6 or later
@@ -65,13 +70,17 @@ This tool batch-publishes transformed DITA files to Help Center.
 
 2. Copy the transformed HTML files to the **zpu/transformed_dita_files** folder.
 
-3. In your command line interface, run the following command to parse each file and publish it to HC:
+3. In your command line interface, navigate to your **zpu** folder on your computer.
+
+4. Run the following command:
 
     ```bash
     $ python3 publish_files.py
     ```
 
-4. When you're done, move or delete the HTML files in the **zpu/transformed_dita_files** folder to prepare for your next batch of transformed DITA files.
+    The tool parses each HTML file and publishes it to HC.
+
+5. When you're done, move or delete the HTML files in the **zpu/transformed_dita_files** folder to prepare for your next batch of files.
 
 
 ### Terms of use

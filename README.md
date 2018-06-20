@@ -6,7 +6,7 @@ This tool batch-publishes transformed DITA files to Help Center.
 
 ### Limitation
 
-The tool updates existing articles on Help Center -- that is, articles with known Help Center ids. To publish new articles, the tool must be modified to specify the target section of each article, as well as use the `post_resource()` helper instead of `put_resource()` (see **api.py**). For more information, see [Create Article](https://developer.zendesk.com/rest_api/docs/help_center/articles#create-article) in the Help Center API docs.
+The tool updates existing articles in Help Center. In other words, the articles have known Help Center ids. To publish new articles, the tool must be modified to specify the target section of each article, as well as use the `post_resource()` instead of the `put_resource()` helper in **api.py**. For more information, see [Create Article](https://developer.zendesk.com/rest_api/docs/help_center/articles#create-article) in the Help Center API docs.
 
 
 ### Requirements

@@ -28,6 +28,8 @@ This tool batch-publishes transformed DITA files to Help Center.
 
     Make sure to follow the format in the example.
 
+    You can keep adding mappings to the same yml file. You don't need to create a yml file each time you publish.
+
     Make sure each article id is unique in the yml file.
 
     Don't include the .dita file extension.

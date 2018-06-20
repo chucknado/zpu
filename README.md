@@ -34,7 +34,7 @@ This tool batch-publishes transformed DITA files to Help Center.
 
     Save the file anywhere on your computer.
 
-2. In the zpu files, update the **auth.py** file with your Zendesk username and API token:
+2. In the zpu project files, update the **auth.py** file with your Zendesk username and API token:
 
     ```
     def get_auth():

@@ -36,14 +36,14 @@ This tool batch-publishes transformed DITA files to Help Center.
 
     Save the file anywhere on your computer.
 
-2. In the zpu project files, update the **auth.py** file with your Zendesk username and API token:
+2. In the zpu project files, update the **auth.py** file with your Zendesk username and API token. Example:
 
     ```
     def get_auth():
         return '{}/token'.format('jdoe@example.com'), '9a8b7c6d5e4f3g2h1'
     ```
 
-3. In the **[HC]** section of the **settings.ini** file, specify your Help Center settings:
+3. In the **[HC]** section of the **settings.ini** file, specify your Help Center settings. Example:
 
     ```text
     [HC]
@@ -51,7 +51,7 @@ This tool batch-publishes transformed DITA files to Help Center.
     locale=en-us
 	```
 
-4. In the **[MAP]** section of the **settings.ini** file, specify the path to the **ditamap.yml** file:
+4. In the **[MAP]** section of the **settings.ini** file, specify the path to the **ditamap.yml** file. Example:
     
     ```text
     [MAP]

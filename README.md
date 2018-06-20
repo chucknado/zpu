@@ -3,6 +3,14 @@
 
 This tool batch-publishes transformed DITA files to Help Center.
 
+
+### Requirements
+
+- Python 3.6 or later
+- requests library - http://docs.python-requests.org/en/master/
+- BeautifulSoup library - https://www.crummy.com/software/BeautifulSoup/
+
+
 ### Setting up
 
 1. Map your DITA file names to their corresponding Help Center ids. To do so, create a yml file called **ditamap.yml**. Enter the following information for each article: DITA filename without the file extension, Help Center subdomain, and article id.
@@ -26,7 +34,6 @@ This tool batch-publishes transformed DITA files to Help Center.
     Don't include the .dita extension.
 
     Save the file anywhere on your computer.
-
 
 2. In the zpu files, update the **auth.py** file with your Zendesk username and API token:
 
@@ -52,7 +59,6 @@ path=/Volumes/GoogleDrive/Team Drives/Documentation/All products/production/dita
 
 
 ### Publishing files
-
 
 1. Batch transform the DITA files to HTML.
 

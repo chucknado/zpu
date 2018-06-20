@@ -61,14 +61,14 @@ This tool batch-publishes transformed DITA files to Help Center.
 
 ### Publishing files
 
-1. Batch transform the DITA files to HTML.
+1. Use your DITA authoring tool to batch transform the DITA files to HTML.
 
 2. Copy the transformed HTML files to the **zpu/transformed_dita_files** folder.
 
 3. In your command line interface, run the following command to parse each file and publish it to HC:
 
     ```bash
-    $ python publish_files.py
+    $ python3 publish_files.py
     ```
 
 4. When you're done, move or delete the HTML files in the **zpu/transformed_dita_files** folder to prepare for your next batch of transformed DITA files.

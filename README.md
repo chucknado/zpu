@@ -1,7 +1,7 @@
 
 ## Batch publishing tool
 
-This tool batch-publishes transformed DITA files to Help Center.
+This tool batch-publishes HTML files transformed from DITA to Help Center.
 
 
 ### Limitation

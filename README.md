@@ -24,14 +24,13 @@ This tool batch-publishes transformed DITA files to Help Center.
     - dita: zug_markdown
       hc: support
       id: 203661586
-    ...
     ```
 
-    Make sure to follow the format above.
+    Make sure to follow the format in the example.
 
-    Make sure the article id is unique in the yml file.
+    Make sure each article id is unique in the yml file.
 
-    Don't include the .dita extension.
+    Don't include the .dita file extension.
 
     Save the file anywhere on your computer.
 
@@ -42,7 +41,7 @@ This tool batch-publishes transformed DITA files to Help Center.
         return '{}/token'.format('jdoe@example.com'), '9a8b7c6d5e4f3g2h1'
     ```
 
-3. Specify your Help Center settings in the **[HC]** section of the **settings.ini** file:
+3. In the **[HC]** section of the **settings.ini** file, specify your Help Center settings:
 
     ```text
     [HC]
@@ -50,11 +49,11 @@ This tool batch-publishes transformed DITA files to Help Center.
     locale=en-us
 	```
 
-4. Specify the path to the **ditamap.yml** file the **[MAP]** section of the **settings.ini** file:
+4. In the **[MAP]** section of the **settings.ini** file, specify the path to the **ditamap.yml** file:
     
     ```text
     [MAP]
-path=/Volumes/GoogleDrive/Team Drives/Documentation/All products/production/ditamap.yml
+    path=/Volumes/GoogleDrive/Team Drives/Documentation/All products/production/ditamap.yml
     ```
 
 
@@ -64,7 +63,7 @@ path=/Volumes/GoogleDrive/Team Drives/Documentation/All products/production/dita
 
 2. Copy the transformed HTML files to the **zpu/transformed_dita_files** folder.
 
-3. Run the following script to parse each file and publish it to HC:
+3. In your command line interface, run the following command to parse each file and publish it to HC:
 
     ```bash
     $ python publish_files.py

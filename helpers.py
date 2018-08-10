@@ -39,7 +39,7 @@ def package_translation(file):
     :param file: A path object to an HTML file
     :return: Dictionary with a title and body property
     """
-    with file.open(mode='r') as f:
+    with file.open(mode='r', encoding='utf-8') as f:
         html_source = f.read()
     tree = BeautifulSoup(html_source, 'lxml')
     title = tree.h1.string.strip()

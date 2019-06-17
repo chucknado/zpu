@@ -6,7 +6,7 @@ This tool batch-publishes HTML files transformed from DITA source files to Help 
 
 ### Limitation
 
-The tool updates existing articles in Help Center. In other words, the articles must have known Help Center ids. To publish a batch of new articles, the tool must be modified to specify the target section of each article, as well as use the `post_resource()` instead of the `put_resource()` helper in **api.py**. For more information, see [Create Article](https://developer.zendesk.com/rest_api/docs/help_center/articles#create-article) in the Help Center API docs.
+The tool updates existing articles in Help Center. In other words, the articles must have known Help Center ids. To publish a batch of new articles, the tool must be modified to specify the target section of each article, as well as use the `post_resource()` instead of the `put_resource()` helper in **api.py**. Here's a quick script that'll upload a collection of HTML files to Help Center: https://gist.github.com/chucknado/40ff923e6a2eef6ad529bf32cd12640f.
 
 
 ### Requirements

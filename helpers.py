@@ -30,7 +30,7 @@ def get_settings(target):
 def get_ditamap_articles():
     ditamap = get_settings('ditamap')
     with ditamap.open(mode='r') as f:
-        return yaml.load(f)
+        return yaml.load(f, Loader=yaml.FullLoader)
 
 
 def package_translation(file):

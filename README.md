@@ -57,10 +57,10 @@ The tool updates existing articles in Help Center. In other words, the articles 
 	```
 
 4. In the **[MAP]** section of the **settings.ini** file, specify the path to the **ditamap.yml** file. Example:
-    
+
     ```text
     [MAP]
-    path=/Volumes/GoogleDrive/Team Drives/Documentation/All products/production/ditamap.yml
+    path=/Volumes/GoogleDrive/Team Drives/Documentation/Production/ditamap.yml
     ```
 
 
